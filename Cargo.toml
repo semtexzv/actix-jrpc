@@ -1,0 +1,23 @@
+[package]
+name = "actix-jrpc"
+version = "0.1.0"
+authors = ["Michal Hornický <semtexzv@gmail.com>"]
+edition = "2018"
+
+[dependencies.json]
+package = "serde_json"
+version = "*"
+
+[dependencies]
+rand = "0.8.4"
+
+actix = { version = "0.12", default-features = false, features = ["actix_derive", "macros", "resolver"] }
+
+tokio = "*"
+tokio-util = "*"
+futures = "0.3.19"
+
+bytes = "*"
+serde = { version = "*", features = ["derive"] }
+
+url = "*"
